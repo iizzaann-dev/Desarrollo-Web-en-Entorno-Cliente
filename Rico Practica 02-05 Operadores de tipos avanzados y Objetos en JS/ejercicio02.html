@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        var s = new String('rafa');
+        document.write("<p>Texto: " + s + "</p>");
+
+        var longitud = s.length;
+        document.write("<p>Longitud: " + longitud + "</p>");
+
+        var pos = s.indexOf("fa");
+        document.write("<p>Posición de 'fa': " + pos + "</p>");
+    </script>
+
+    <h2>Explicación</h2>
+
+    <p><strong>new String('rafa'):</strong> crea un objeto String que contiene el texto "rafa".</p>
+
+    <p><strong>s.length:</strong> devuelve la cantidad de caracteres del texto. En este caso, 4.</p>
+
+    <p><strong>s.indexOf("fa"):</strong> busca la primera aparición de "fa" y devuelve su posición. Como los índices empiezan en 0, el resultado es 2.</p>
+</body>
+</html>

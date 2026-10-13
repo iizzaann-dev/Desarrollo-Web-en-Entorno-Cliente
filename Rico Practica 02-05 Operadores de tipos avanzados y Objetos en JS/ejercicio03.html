@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <h1>Operador [] en JavaScript</h1>
+
+    <h2>1. Acceder a un array</h2>
+    <script>
+        let frutas = ["Manzana", "Pera", "Plátano"];
+
+        document.write("Primera fruta: " + frutas[0] + "<br>");
+        document.write("Segunda fruta: " + frutas[1] + "<br>");
+        document.write("Tercera fruta: " + frutas[2] + "<br>");
+    </script>
+
+    <h2>2. Modificar un elemento</h2>
+    <script>
+        frutas[0] = "Naranja";
+        document.write("Primera fruta modificada: " + frutas[0] + "<br>");
+    </script>
+
+    <h2>3. Acceder a una propiedad de un objeto</h2>
+    <script>
+        let persona = {
+            nombre: "Ana",
+            edad: 20
+        };
+
+        document.write("Nombre: " + persona["nombre"] + "<br>");
+        document.write("Edad: " + persona["edad"] + "<br>");
+    </script>
+</body>
+</html>

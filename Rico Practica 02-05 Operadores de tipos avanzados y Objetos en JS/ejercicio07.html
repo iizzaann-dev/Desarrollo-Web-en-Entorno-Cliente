@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</title>
+</head>
+<body>
+    <h1>¿Para qué sirve el operador delete?</h1>
+
+    <p>
+        El operador delete sirve para eliminar una propiedad de un objeto
+        en JavaScript.
+    </p>
+
+    <p>
+        Por ejemplo, si tenemos un objeto con las propiedades nombre, edad
+        y ciudad, podemos utilizar delete para eliminar la propiedad ciudad.
+    </p>
+
+    <script>
+        var persona = {
+            nombre: "Carlos",
+            edad: 20,
+            ciudad: "Málaga"
+        };
+
+        delete persona.ciudad;
+
+        document.write("Nombre: " + persona.nombre + "<br>");
+        document.write("Edad: " + persona.edad + "<br>");
+        document.write("Ciudad: " + persona.ciudad);
+    </script>
+
+    <p>
+        En este ejemplo, delete elimina la propiedad ciudad del objeto persona.
+        Por eso, al intentar mostrar su valor, aparece undefined, ya que la
+        propiedad ya no existe.
+    </p>
+</body>
+</html>

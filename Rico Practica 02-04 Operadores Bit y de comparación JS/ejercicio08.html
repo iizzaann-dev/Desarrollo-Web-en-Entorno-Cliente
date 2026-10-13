@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Ejercicio 8</h1>
+
+    <p> Los operadores bit a bit (bitwise) son operadores que trabajan directamente con los 
+        bits de un número, es decir, con su representación en binario (usando 0 y 1)</p>
+
+        <p>Trabajan directamente con los bits (0 y 1) de los números.</p>
+
+    <table>
+        <tr>
+            <th>Operador</th>
+            <th>Nombre</th>
+            <th>Ejemplo</th>
+            <th>Resultado</th>
+        </tr>
+
+        <tr>
+            <td>&amp;</td>
+            <td>AND</td>
+            <td>5 &amp; 3</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>|</td>
+            <td>OR</td>
+            <td>5 | 3</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td>^</td>
+            <td>XOR</td>
+            <td>5 ^ 3</td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <td>~</td>
+            <td>NOT</td>
+            <td>~5</td>
+            <td>-6</td>
+        </tr>
+
+        <tr>
+            <td>&lt;&lt;</td>
+            <td>Desplazamiento izquierda</td>
+            <td>5 &lt;&lt; 1</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td>&gt;&gt;</td>
+            <td>Desplazamiento derecha</td>
+            <td>5 &gt;&gt; 1</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td>&gt;&gt;&gt;</td>
+            <td>Derecha sin signo</td>
+            <td>5 &gt;&gt;&gt; 1</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <h2>¿Se utilizan mucho?</h2>
+    <p>
+        Se utilizan poco en el desarrollo web habitual, pero son importantes
+        en redes, seguridad informática y programación de bajo nivel.
+    </p>
+
+    <script>
+        document.write("<p>5 &amp; 3 = " + (5 & 3) + "</p>");
+        document.write("<p>5 | 3 = " + (5 | 3) + "</p>");
+        document.write("<p>5 ^ 3 = " + (5 ^ 3) + "</p>");
+    </script>
+</body>
+</html>

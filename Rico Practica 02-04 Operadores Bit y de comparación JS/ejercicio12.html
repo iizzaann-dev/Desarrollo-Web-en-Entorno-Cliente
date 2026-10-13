@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <script>
+        let binario = "10010111";
+        let decimal = parseInt(binario, 2);
+
+        let segundoparametroBinario = "00000000";
+        let segundoparametro = parseInt(segundoparametroBinario, 2);
+        let DesplazamientoAND = decimal & segundoparametro; // 0
+
+        segundoparametroBinario = "00000001";
+        segundoparametro = parseInt(segundoparametroBinario, 2);
+        let DesplazamientoOR = decimal | segundoparametro; // 151
+
+        segundoparametroBinario = "00000001";
+        segundoparametro = parseInt(segundoparametroBinario, 2);
+        let DesplazamientoXOR = decimal ^ segundoparametro; // 150
+
+        let DesplazamientoNOT = ~decimal; // -152
+
+        let Desplazamientoizquierda = decimal << 1; // 302
+
+        let Desplazamientoderecha = decimal >> 1; // 75
+
+        let Desplazamientoderecha0 = decimal >>> 2; // 37
+
+        document.writeln("<br>AND: " + DesplazamientoAND);
+        document.writeln("<br>OR: " + DesplazamientoOR);
+        document.writeln("<br>XOR: " + DesplazamientoXOR);
+        document.writeln("<br>NOT: " + DesplazamientoNOT);
+        document.writeln("<br>Desplazamiento izquierda: " + Desplazamientoizquierda);
+        document.writeln("<br>Desplazamiento derecha: " + Desplazamientoderecha);
+        document.writeln("<br>Desplazamiento derecha sin signo: " + Desplazamientoderecha0);
+    </script>
+</body>
+</html>

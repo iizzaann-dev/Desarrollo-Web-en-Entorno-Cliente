@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-06 JS Condicionales</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>02-06 JS Condicionales</h1>
+    <h2>Izan Rico Blanco</h2>
+    
+    <h2 class = "titulo_ejercicios">Ejercicio 1</h2>
+
+    <script language="JavaScript">
+        var nombre;
+        var edad;
+        nombre=prompt('Ingrese su nombre:','');
+        edad=Number(prompt('Ingrese su edad:',''));
+        document.write('Hola ');
+        document.write(nombre);
+        document.write(' asi que tienes ');
+        document.write(edad);
+        document.write(' años');
+    </script>
+
+    
+
+    
+
+    <h2 class = "titulo_ejercicios">Ejercicio 4</h2>
+    
+    <script>
+        if (edad < 18){
+            document.write("Eres menor")
+        }else{
+            document.write("Estás en edad activa.")
+        }
+    </script>
+
+
+    <h2 class = "titulo_ejercicios">Ejercicio 5</h2>
+    
+    <script>
+        if(edad < 18){
+            document.write("Eres menor")
+        }else if(edad >= 18){
+            document.write("Estás en edad activa")
+        }else if (edad > 67){
+            document.write("Estás jubilado")
+        }
+    </script>
+</body>
+</html>
