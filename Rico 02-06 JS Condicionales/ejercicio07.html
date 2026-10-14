@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <h1>02-06 JS Condicionales</h1>
+    <h2>Izan Rico Blanco</h2>
+    <h2 class = "titulo_ejercicios">Ejercicio 7</h2>
+
+    <script>
+        const direccion = window.location.href;
+        const inicio = direccion.substring(0, 4);
+
+        document.write("Dirección: ", direccion, "<br>");
+
+        if(inicio == "file"){
+            document.write("La página es local", "<br>");
+            
+        }else{
+            document.write("La página es remota", "<br>");
+            
+        }
+                
+    </script>
+
+</body>
+</html>

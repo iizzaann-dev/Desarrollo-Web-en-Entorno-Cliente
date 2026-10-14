@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>02-06 JS Condicionales</h1>
+    <h2>Izan Rico Blanco</h2>
+    <h2 class="titulo_ejercicios">Ejercicio 12</h2>
+    <script>
+        const numero = prompt("Ingresa el número del que quieras saber su absoluto: ");
+
+        if(numero < 0){
+            let absoluto = numero * (-1);
+            document.write("El número absoluto de ", numero, " es: ", absoluto, "<br>");
+            
+        }else if (numero > 0){
+            document.write("El número absoluto de ", numero, " es: ", numero, "<br>");
+            
+        }else{
+            document.write("El absoluto de 0 es 0, es decir, no tiene absouto.", "<br>");
+            
+        }
+        
+    </script>
+</body>
+</html>

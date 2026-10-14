@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>02-06 JS Condicionales</h1>
+    <h2>Izan Rico Blanco</h2>
+    <h2 class="titulo_ejercicios">Ejercicio 15</h2>
+    <script>
+        const entrada = prompt("Ingresa una letra: ");
+
+        if (entrada.length > 1){
+            document.write("La entrada tiene más de una letra. No se puede procesar el dato.", "<br>");
+            
+        }else{
+            if(entrada.toLowerCase() == "a" 
+            || entrada.toLowerCase() == "e" 
+            || entrada.toLowerCase() == "i"
+            || entrada.toLowerCase() == "o"
+            || entrada.toLowerCase() == "u"){
+                document.write("Es vocal.", "<br>");
+                
+            }else{
+                document.write("Es consonante.", "<br>");
+                
+            }
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <h1>¿Para qué sirve el operador coma?</h1>
+
+    <p>
+        El operador coma (,) permite evaluar varias expresiones en una
+        misma instrucción. Todas las expresiones se ejecutan de izquierda
+        a derecha, pero el resultado final es el de la última expresión.
+    </p>
+
+    <script>
+        var a = 1;
+        var b = 2;
+
+        var resultado = (a++, b++, a + b);
+
+        document.write("Valor de a: " + a + "<br>");
+        document.write("Valor de b: " + b + "<br>");
+        document.write("Resultado final: " + resultado);
+    </script>
+
+    <p>
+        En este ejemplo, el operador coma ejecuta tres expresiones:
+        primero incrementa a, después incrementa b y, por último, suma
+        sus valores. El resultado final es 5, porque a vale 2 y b vale 3.
+    </p>
+</body>
+</html>

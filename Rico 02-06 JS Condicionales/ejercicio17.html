@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>02-06 JS Condicionales</h1>
+    <h2>Izan Rico Blanco</h2>
+    <h2 class="titulo_ejercicios">Ejercicio 17</h2>
+    <script>
+        const voto = prompt("Ingresa el candidato que quieras votar (A[Rojo], B[Verde], c[Azul]): ");
+
+        if(voto.toLowerCase() == "a"){
+            document.write("<p style= 'color: red;'> Usted a votado por el partido A (Rojo).", "<br>");
+            
+        }else if(voto.toLowerCase() == "b"){
+            document.write("<p style= 'color: green;'> Usted a votado por el partido B (Verde).", "<br>");
+
+        }else if(voto.toLowerCase() == "c"){
+            document.write("<p style= 'color: blue;'> Usted a votado por el partido C (Azul).", "<br>");
+
+        }else{
+            document.write("Opción errónea.", "<br>");
+            
+        }
+
+        switch (voto.toLowerCase()) {
+            case "a":
+                document.write("<p style= 'color: red;'> Usted a votado por el partido A (Rojo).", "<br>");
+                break;
+            
+            case "b":
+            document.write("<p style= 'color: green;'> Usted a votado por el partido B (Verde).", "<br>");
+
+            case "c":
+            default:
+                break;
+        }
+    </script>
+</body>
+</html>

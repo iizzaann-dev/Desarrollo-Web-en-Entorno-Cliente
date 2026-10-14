@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 27</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>02-06 JS Condicionales</h1>
+    <h2>Izan Rico Blanco</h2>
+    <h2 class="titulo_ejercicios">Ejercicio 27</h2>
+    <script>
+        const accion = prompt("Ingresa el color que quieras (rojo, amarillo o verde): ");
+
+        if(accion.toLowerCase() == "rojo"){
+            document.write("Detente", "<br>");
+            
+        }else if (accion.toLowerCase() == "amarillo"){
+            document.write("Precaución", "<br>");
+            
+        }else if(accion.toLowerCase() == "verde"){
+            document.write("Continua", "<br>");
+            
+        }else{
+            document.write("El color introducido no es válido.", "<br>");
+            
+        }
+        
+    </script>
+</body>
+</html>

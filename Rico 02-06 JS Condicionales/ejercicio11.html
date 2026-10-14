@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>02-06 JS Condicionales</h1>
+    <h2>Izan Rico Blanco</h2>
+    <h2 class = "titulo_ejercicios">Ejercicio 11</h2>
+
+    <script>
+        const dia = prompt("Ingresa el día: ");
+        
+        if (dia.toLowerCase() == "lunes"){
+            document.write("Es lunes", "<br>");
+            
+        }else if(dia.toLowerCase() == "viernes"){
+            document.write("Es viernes", "<br>");
+            
+        }else if(dia.toLocaleLowerCase() == "sábado" 
+        || dia.toLowerCase() == "domingo" 
+        || dia.toLowerCase() == "sabado"){
+            document.write("Es sábado o domingo.", "<br>");
+            
+        }else{
+            document.write("Es martes, miércoles o jueves.", "<br>");
+            
+        }
+    </script>
+</body>
+</html>

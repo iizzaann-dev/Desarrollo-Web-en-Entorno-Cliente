@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 22</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>02-06 JS Condicionales</h1>
+    <h2>Izan Rico Blanco</h2>
+    <h2 class="titulo_ejercicios">Ejercicio 22</h2>
+    <script>
+        const nota = Number(prompt("Ingresa tu nota."));
+
+        if(nota >= 0 && nota < 5){
+            document.write("Estas suspenso.", "<br>");
+        }else if(nota >= 5 && nota < 7){
+            document.write("Tienes un suficiente.", "<br>");
+        }else if (nota >= 7 && nota < 9){
+            document.write("Tienes un notable.", "<br>");
+        }else if(nota >= 9 && nota <= 10){
+            document.write("Tienes un sobresaliente.", "<br>");
+        }else{
+            document.write("Tu nota no es válida.", "<br>");
+            
+        }
+    </script>
+</body>
+</html>
