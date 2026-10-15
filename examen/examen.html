@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Izan Rico Blanco</h1>
+
+    <h2>Ejercicio 1</h2>
+
+    <script>
+        const num1 = parseInt(prompt("Ingresa el primer número: "));
+        const num2 = parseInt(prompt("Ingresa el segundo número: "));
+        const num3 = parseInt(prompt("Ingresa el tercer número: "));
+        
+    
+        if(isNaN(num1) || isNaN(num2) || isNaN() && 
+        !Number.isInteger(num1) || !Number.isInteger(num2) || !Number.isInteger(num3)){
+            document.write("Algún número ingresado no es válida.", "<br>");
+            
+        }else{
+            const resultado = (num1 * num2 + num3) * num3;
+            document.write(resultado);
+            
+        }
+        
+    </script>
+
+    <h2>Ejercicio 2</h2>
+
+    <script>
+        const var1 = 1;
+        const var2 = "hola"
+        const var3 = true;
+        let nota;
+        const var4 = null;
+        const var5 = 12345678901234567890n;
+        const persona1 = {nombre: "Manuel", edad: 19};
+        const ciudades = ["Málaga", "Sevilla", "Cádiz"];
+        function saludo () {
+            return "hola";
+        }
+
+        document.write("Tipo: ", typeof(var1), "<br>");
+        document.write("Tipo: ", typeof(var2), "<br>");
+        document.write("Tipo: ", typeof(var3), "<br>");
+        document.write("Tipo: ", typeof(nota), "<br>");
+        document.write("Tipo: ", typeof(var4), "<br>");
+        document.write("Tipo: ", typeof(var5), "<br>");
+        document.write("Tipo: ", typeof(persona), "<br>");
+        document.write("Tipo: ", typeof(ciudades), "<br>");
+        document.write("Tipo: ", typeof(saludo()), "<br>");
+        document.write("¿Es un ojeto?: ", persona instanceof Object, "<br>");
+        document.write("¿Es un array?: ", ciudades instanceof Array, "<br>");
+        document.write("¿Es una función?: ",saludo() instanceof function(){}, "<br>");
+        
+        
+    </script>
+
+    <h2>Ejercicio 3</h2>
+
+    <script>
+        const mes = Number(prompt("Ingresa el mes (1-12): "));
+
+        filosofo =  (mes === 1) ? "Aristóteles":
+                    (mes === 2) ? "Platón":
+                    (mes === 3) ? "San Agustín":
+                    (mes === 4) ? "Santo Tomás":
+                    (mes === 5) ? "Descartes":
+                    (mes === 6) ? "Rousseau":
+                    (mes === 7) ? "Locke": "No coincide con ningún filósofo.";
+
+        document.write(filosofo, "<br>");
+        
+    </script>
+
+    <h2>Ejercicio 4</h2>
+
+    <script>
+        const nume1 = Number(prompt("Ingresa el primer número: "));
+        const nume2 = Number(prompt("Ingresa el segundo número: "));
+        const operador = prompt("Ingresa la operacón (AND, OR, XOR, DIZQ o DDER): ")
+        .trim().toUpperCase();
+
+        if (!Number.isInteger(num1) || !Number.isInteger(num2)) {
+            document.write("Debes ingresar dos números enteros.");
+        } else if (
+            (operacion === "DIZQ" || operacion === "DDER") &&
+            (num2 < 0 || num2 > 31)
+        ) {
+            document.write("Para desplazar, el segundo número debe estar entre 0 y 31.");
+        } else {
+            let resultado;
+
+        switch (operacion) {
+            case "AND":
+            resultado = num1 & num2;
+            break;
+            case "OR":
+            resultado = num1 | num2;
+            break;
+            case "XOR":
+            resultado = num1 ^ num2;
+            break;
+            case "DIZQ":
+            resultado = num1 << num2;
+            break;
+            case "DDER":
+            resultado = num1 >> num2;
+            break;
+            default:
+            document.write("Operación no reconocida.");
+        }
+
+        if (resultado !== undefined) {
+            const binario = (resultado >>> 0).toString(2).padStart(32, "0");
+
+            document.write(`Resultado decimal: ${resultado}<br>`);
+            document.write(`Resultado binario (32 bits): ${binario}`);
+        }
+        }
+        
+    </script>
+
+    <h2>Ejercicio 5</h2>
+
+    <script>
+        const opcion = Number(prompt("Ingresa un número entre 1 y 10: "));
+        let resultado = "";
+        switch (opcion) {
+            case 1, 2, 3:
+                resultado = document.write("Números pequeños", "<br>");    
+                break;
+            
+            case 5:
+                resultado = document.write("La opción es mayor o igual que 5.", "<br>");
+                break;
+            
+            case 6:
+                resultado = document.write("La opción es mayor o igual que 5.", "<br>");
+                resultado += document.write("La opción es mayor o igual que 6.", "<br>");
+                break;
+
+            case 7:
+                resultado = document.write("La opción es mayor o igual que 5.", "<br>");
+                resultado += document.write("La opción es mayor o igual que 6.", "<br>");
+                resultado += document.write("La opción es mayor o igual que 7.", "<br>");
+                break;
+
+            case 8:
+                resultado = document.write("Número 8.", "<br>");
+                break;
+    
+            case 9: 
+                resultado = document.write("Número 9.", "<br>");
+                break;
+
+            default:
+                document.write("Error", "<br>");
+                
+                break;
+        }
+    </script>
+
+
+    <h2>Ejercicio 6</h2>
+
+    <script>
+        var colores=["#f25","#f50","#f85","#F11","#F36","#fA5","#f5B","#f25","#f50","#f85","#F11"]
+        const i = Number(prompt("Ingresa el número positivo que quieras: "));
+        
+
+        if (i < 0){
+            document.write("El número introducido es menegativo.", "<br>");
+            
+        }
+        
+        
+        document.write(`<table>`);
+                
+
+        for(let valor = 0; valor < i; valor++){
+            document.write(`<tr>`);
+
+            for(let indice = 0; indice < i; indice++){
+                const color = colores[indice % colores.length];
+                document.write(`<td bgcolor ="${color}" width = "40" height = "40">${indice + 1}</td>`);
+
+            }
+
+            document.write(`</tr>`);
+
+        }
+
+        document.write(`</table>`);
+        
+        
+
+    </script>
+
+    <h2>Ejercicio 7</h2>
+        
+    <script>
+        let persona = { Nombre: "paco", Apellido: "Lopez", nacimiento:
+        "11/12/1969", trabajo:"informatico" , sexo: "hombre", amigos:
+        ["juan","pedro","miguel"],sueldo:40000, trabajo:"olists SL",
+        UltimoProjecto: "jse.js" };
+
+        for(i in persona){
+            document.write(`${i}: `, `${persona[i]}` ,"<br>");
+            
+        }
+    </script>
+
+    <h2>Ejercicio 8</h2>
+    <script>
+        var signos = [ "capricornio", "acuario","piscis","aries", "tauro" ];
+
+        document.write(`<table><tr>`);
+        
+        for( let i = 0; i < signos.length; i++){
+            document.write(`<td><img src="signos/${signos[i]}.jpg">
+                <br>${signos[i]}</td>`);
+            
+        }
+
+        document.write(`</tr></table>`);
+        
+    </script>
+
+    <h2>Ejercicio 9</h2>
+
+    <script>
+        const tablero = [
+        ["mina", "vacía", "vacía", "mina", "vacía"],
+        ["vacía", "mina", "vacía", "vacía", "vacía"],
+        ["vacía", "vacía", "mina", "vacía", "mina"],
+        ["mina", "vacía", "vacía", "vacía", "vacía"],
+        ["vacía", "vacía", "mina", "vacía", "mina"]
+        ];
+
+        document.write(`<table>`);
+        document.write(`<tr>`);
+        
+        
+        for(let i = 0; i < tablero.length; i++){
+            for(let j = 0; j < tablero[i].length; j++){
+                document.write(`<td><button onclick="alert('${tablero[i][j]}')">M o H?</button></td>`);
+                
+            }
+            document.write(`</tr>`);
+            
+        }
+
+        document.write(`</table>`);
+        
+    </script>
+    
+</body>
+</html>
