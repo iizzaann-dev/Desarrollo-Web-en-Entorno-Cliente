@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio0 5</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>02-08 Bucles 2 Avanzados JS</h1>
+    <h2>Izan Rico Blanco</h2>
+    <h2 class="titulo_ejercicios">Ejercicio 05</h2>
+    <script>
+        const arr1 = ["Malaga", "Sevilla", "Cordoba", "Huelva", "Cadiz", "Almeria", "Granada" ];
+
+        document.write(`<form name= "selectForm">`);
+            for(ciudad of arr1){
+                document.write(`<button input type="button" onclick='alert("La ciudad mas bonita es ${ciudad}")'>${ciudad}</button>`, "<br>");
+            }
+        document.write(`</form>`);
+        
+        
+    </script>
+</body>
+</html>

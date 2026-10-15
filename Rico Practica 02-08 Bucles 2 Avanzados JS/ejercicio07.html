@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio0 6</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>02-08 Bucles 2 Avanzados JS</h1>
+    <h2>Izan Rico Blanco</h2>
+    <h2 class="titulo_ejercicios">Ejercicio 07</h2>
+    <form name="selectForm">
+    <p>
+        <label for="musicTypes">
+        Elige algunos tipos de música y pulsa uno de los botones:
+        </label>
+
+        <select id="musicTypes" name="musicTypes" multiple>
+        <option selected>R&amp;B</option>
+        <option>Jazz</option>
+        <option>Blues</option>
+        <option>New Age</option>
+        <option>Classical</option>
+        <option>Opera</option>
+        </select>
+    </p>
+
+    <p>
+        <input id="btnWhile" type="button" value="Contar con while">
+        <input id="btnDoWhile" type="button" value="Contar con do...while">
+    </p>
+    </form>
+
+    <script>
+    function contarConWhile(selectObject) {
+        let numeroSeleccionados = 0;
+        let i = 0;
+
+        while (i < selectObject.options.length) {
+        if (selectObject.options[i].selected) {
+            numeroSeleccionados++;
+        }
+        i++;
+        }
+
+        return numeroSeleccionados;
+    }
+
+    function contarConDoWhile(selectObject) {
+        let numeroSeleccionados = 0;
+        let i = 0;
+
+        if (selectObject.options.length > 0) {
+        do {
+            if (selectObject.options[i].selected) {
+            numeroSeleccionados++;
+            }
+            i++;
+        } while (i < selectObject.options.length);
+        }
+
+        return numeroSeleccionados;
+    }
+
+    const musicTypes = document.getElementById("musicTypes");
+
+    document.getElementById("btnWhile").addEventListener("click", function () {
+        alert("Seleccionadas (while): " + contarConWhile(musicTypes));
+    });
+
+    document.getElementById("btnDoWhile").addEventListener("click", function () {
+        alert("Seleccionadas (do...while): " + contarConDoWhile(musicTypes));
+    });
+    </script>
+</body>
+</html>
